@@ -61,15 +61,27 @@ main{
 .title{
   margin: 15px 0 5px;
 }
+.social i {   
+  color:black;
+}
+ 
+/* タブレット横置き(1024px)程度の大きさ以下に適用される設定です */
+@media screen and (max-width:1024px) {  
+  .social i {    
+    color: green;  
+    }
+}
  
 /* タブレット縦置きサイズ(768px)程度の画面の大きさ以下に適用される設定です */
 @media screen and (max-width:768px) {  
-  .step-box {     
-    float:none;
-    margin-top:50px 0;
-    padding:20px;
-    width:90%;
+  .social i {    
+    color: red;  
     }
 }
  
 /* スマートフォンサイズ(425px)程度の画面の大きさ以下に適用される設定です */
+@media screen and (max-width:425px) {  
+.social i {
+    color: blue;
+    }
+}
